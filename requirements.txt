@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+opencv-python-headless
+Pillow
+python-multipart
+aiofiles
+aiogram
+aiohttp
+python-dotenv
+requests
+tensorflow
+jinja2

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌳 Project: Tree Segmentation</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <header>
+        <center><h1>Сегментация деревьев на изображении</h1>
+        <div><b>
+            <input type="radio" id="server1" name="server" value="http://158.160.19.101:8001" checked>
+            <label for="server1">🖥 Yandex Cloud</label>
+            <input type="radio" id="server2" name="server" value="http://api-serv.ru:8001">
+            <label for="server2">🖥 Сервер VPS</label></b>
+        </div>
+        </center>
+    </header>
+    <main>
+    <div class="container">
+        <h3>📥 Загрузка изображения</h3>
+        <div class="button-container">
+            <input type="file" id="fileInput" accept=".jpg,.jpeg,.png" hidden>
+            <label for="fileInput" id="uploadButton">💾 Выбрать файл</label>
+            <button onclick="predict()">📡 Отправить в обработку</button>
+        </div>
+        <div id="dropZone">.. или перетащить изображение сюда</div>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <div class="image-box" id="originalImageContainer">
+                <h3>1️⃣  Оригинальное изображение</h3>
+                <img id="originalImage">
+            </div>
+            <div class="image-box" id="segmentedImageContainer">
+                <h3>2️⃣  Сегментированное изображение</h3>
+                <img id="segmentedImage">
+                <a id="downloadLink" download="segmented.png">💽 Сохранить полученное изображения</a>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <center><p>&copy; 2023 Tree Segmentation Project. Все права защищены.</p></center>
+    </footer>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>

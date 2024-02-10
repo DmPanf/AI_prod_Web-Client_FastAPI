@@ -1,3 +1,5 @@
+# FastAPI
+
 from fastapi import FastAPI, File, UploadFile, Request  # APIRouter - здесь не нужен, все добавляем напрямую к app
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware

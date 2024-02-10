@@ -1,4 +1,5 @@
 #@title [pilot_model(image_path)]
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras import backend as K
 import numpy as np
@@ -33,3 +34,5 @@ def pilot_model(image):
     # print(prediction.shape)
     processed_image = postprocess_prediction(prediction, CLASS_LABELS)
     return processed_image
+
+# 

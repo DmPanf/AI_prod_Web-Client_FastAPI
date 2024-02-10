@@ -14,3 +14,8 @@ AI Integration Web-Client based on FastAPI + Telegram-Bot in Docker
 
 
 ## 
+
+
+## 
+
+
